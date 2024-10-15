@@ -1,0 +1,215 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Color Theme */
+  :root {
+    --primary-blue: #0056b3;
+    --secondary-white: #ffffff;
+    --accent-blue: #007bff;
+  }
+  
+  /* Header Styling */
+  header {
+    background-color: var(--primary-blue);
+    color: var(--secondary-white);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo h1 {
+    font-size: 2.5em;
+  }
+  
+  header nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  header nav ul li {
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: var(--secondary-white);
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: var(--accent-blue);
+  }
+  
+  /* Hero Section Styling */
+  .home-section {
+    background-color: var(--primary-blue);
+    color: var(--secondary-white);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .home-section h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+  }
+  
+  .home-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: var(--accent-blue);
+    color: var(--secondary-white);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #00509e;
+  }
+  
+  /* Services Section Styling */
+  .services-section {
+    padding: 40px;
+    text-align: center;
+    background-color: var(--secondary-white);
+  }
+  
+  .services-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  .service {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Biography Section */
+  .biography-section {
+    padding: 40px;
+    background-color: #f0f8ff;
+    text-align: center;
+  }
+  
+  .bio-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-blue);
+    object-fit: cover;
+  }
+  
+  .bio-text {
+    max-width: 600px;
+    text-align: left;
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  /* Contact Section Styling */
+  .contact-section {
+    padding: 40px;
+    background-color: var(--secondary-white);
+    text-align: center;
+  }
+  
+  .contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .contact-section form input, .contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .contact-section form button {
+    padding: 10px 20px;
+    background-color: var(--accent-blue);
+    color: var(--secondary-white);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-section form button:hover {
+    background-color: #00509e;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-blue);
+    color: var(--secondary-white);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+/* Futuristic Logo Animation */
+@keyframes futuristic-glow {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
+        text-shadow: 0 0 5px #00eaff, 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff;
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.2) rotate(10deg);
+        text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff, 0 0 80px #00eaff;
+        opacity: 0.8;
+    }
+}
+
+.logo h1 {
+    font-size: 3rem;
+    color: #004aad;
+    text-align: center;
+    animation: futuristic-glow 3s infinite ease-in-out; /* Applies futuristic glow animation */
+    transition: transform 0.3s ease, color 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+
+.logo h1:hover {
+    color: #00eaff;
+    transform: scale(1.1) rotate(5deg);
+}
